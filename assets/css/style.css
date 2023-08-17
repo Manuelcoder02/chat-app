@@ -1,0 +1,395 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(/assets/webfonts/Rubik-VariableFont_wght.ttf);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Rubik";
+  background-color: #fff;
+}
+.bg-coloured {
+  width: 80vw;
+  height: 65vh;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  position: absolute;
+  z-index: -1;
+  left: -40%;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  color: none;
+}
+.bg-transparent-coloured {
+  width: 80vw;
+  height: 65vh;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  position: absolute;
+  z-index: -1;
+  top: 67%;
+  left: 50%;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 150px;
+  opacity: 0.05;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.chatbox {
+  background-color: #eee;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.chatbox-container {
+  /* width: 90%;
+  margin: 0 auto; */
+  padding: 1em;
+  /* border: 3px solid green; */
+}
+.header {
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+  padding: 0;
+}
+.header-box {
+  /* border: 3px solid red; */
+  background-color: #eee;
+  border-radius: 20px;
+  width: 60%;
+  height: 2.5em;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: -20px;
+  border: none;
+}
+.header-text {
+  /* border: 3px solid green; */
+  display: flex;
+  align-items: center;
+}
+.header-text__one {
+  /* border: 3px solid red; */
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 1em 0;
+  width: 85%;
+  margin: 0 auto;
+}
+.left-arrow-icon {
+  /* border: 3px solid black; */
+  width: 10%;
+}
+.header-text__one img {
+  max-width: 100%;
+  border-radius: 100px;
+}
+.profile-photo img {
+  max-width: 100%;
+  border: 2px solid #fff;
+}
+.profile-photo {
+  /* border: 3px solid brown; */
+  width: 15%;
+}
+.profile-info {
+  /* border: 3px solid yellow; */
+  width: 60%;
+}
+.profile-name {
+  color: hsl(270, 20%, 96%);
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.active-info {
+  color: hsl(276, 100%, 81%);
+  font-weight: 700;
+  font-size: 0.85em;
+  padding-top: 0.1em;
+}
+/* CHATBOX APP STYLING */
+.main-chatbox {
+  background-color: hsl(270, 20%, 96%);
+  padding: 1em 0.8em;
+  font-size: 0.8em;
+  box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.person-one {
+  margin-bottom: 1em;
+  color: hsl(276, 55%, 52%);
+  background-color: hsla(276, 55%, 52%, 0.2);
+  padding: 0.5em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 70%;
+}
+
+.images__chatbox {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+.dog {
+  border-radius: 15px;
+  width: 20%;
+}
+
+.person-two {
+  margin-bottom: 1em;
+  color: hsl(271, 15%, 43%);
+  background-color: #fff;
+  box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 70%;
+  margin-left: auto;
+}
+
+.radio {
+  margin-bottom: 1em;
+  color: hsl(276, 55%, 52%);
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  padding: 1em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 80%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-radio {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.thirty-minute-walk,
+.one-hour-walk {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.radio-text {
+  font-weight: 700;
+}
+.money {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.text-input {
+  /* border: 3px solid red; */
+  display: flex;
+  position: relative;
+}
+.type-a-message {
+  width: 100%;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 20px;
+}
+.image-text {
+  position: absolute;
+  left: 85%;
+  top: 5px;
+  cursor: pointer;
+}
+.image-text:hover,
+.image-text:active {
+  opacity: 0.8;
+}
+
+input::placeholder {
+  color: hsl(206, 6%, 79%);
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* -- BOOKING SECTION STYLING -- */
+.booking {
+  text-align: center;
+  margin-top: 2em;
+}
+.booking__header-text {
+  font-size: 2.5em;
+  color: hsl(271, 36%, 24%);
+  padding-bottom: 0.7em;
+}
+.booking__text {
+  color: hsl(270, 7%, 64%);
+  font-weight: 700;
+  line-height: 1.8em;
+}
+/* Attribution styling */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* -- MEDIA QUERY FOR SCREENS BIGGER THAN 500px ---  */
+@media (min-width: 500px) {
+  .container {
+    width: 40%;
+  }
+  .bg-coloured {
+    width: 600px;
+    height: 65vh;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(293, 100%, 63%),
+      hsl(264, 100%, 61%)
+    );
+    position: absolute;
+    z-index: -1;
+    top: -5%;
+    left: -10%;
+    transform: rotate(-90deg);
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 1000px;
+    border-top-left-radius: 500px;
+  }
+  .bg-transparent-coloured {
+    width: 600px;
+    height: 80vh;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(293, 100%, 63%),
+      hsl(264, 100%, 61%)
+    );
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 60%;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    opacity: 0.05;
+  }
+}
+
+@media (min-width: 900px) {
+  * {
+    overflow: hidden;
+  }
+  .container {
+    width: 70%;
+    /* border: 3px solid yellow; */
+    margin: 0 auto;
+  }
+  .inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chatbox {
+    /* border: 3px solid red; */
+    width: 32%;
+    align-self: center;
+  }
+  .booking {
+    /* border: 3px solid green; */
+    width: 48%;
+    text-align: left;
+  }
+  .person-one,
+  .person-two,
+  .images__chatbox,
+  .radio {
+    margin-bottom: 5px;
+  }
+  .main-chatbox {
+    padding: 0.5em 1em;
+  }
+  .header-text__one {
+    padding: 10px;
+  }
+
+  .bg-coloured {
+    width: 600px;
+    height: 65vh;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(293, 100%, 63%),
+      hsl(264, 100%, 61%)
+    );
+    position: absolute;
+    z-index: -1;
+    left: -10%;
+    transform: rotate(-90deg);
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 1000px;
+    border-top-left-radius: 500px;
+  }
+  .bg-transparent-coloured {
+    width: 600px;
+    height: 80vh;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(293, 100%, 63%),
+      hsl(264, 100%, 61%)
+    );
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 80%;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    opacity: 0.05;
+  }
+  /* Attribution styling */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15em;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
