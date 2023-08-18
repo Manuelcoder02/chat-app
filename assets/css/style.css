@@ -19,6 +19,7 @@ img {
 body {
   font-family: "Rubik";
   background-color: #fff;
+  overflow-x: hidden;
 }
 .bg-coloured {
   width: 80vw;
@@ -315,7 +316,7 @@ input::placeholder {
 }
 
 @media (min-width: 900px) {
-  * {
+  *, body {
     overflow: hidden;
   }
   .container {
