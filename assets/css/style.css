@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  
 }
 
 @font-face {
@@ -318,8 +318,9 @@ input::placeholder {
 }
 
 @media (min-width: 900px) {
-  *, body {
+  body {
     overflow: hidden;
+    position: relative;
   }
   .container {
     width: 70%;
